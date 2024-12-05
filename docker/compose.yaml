@@ -1,0 +1,12 @@
+services:
+  data-hub-backend-dev:
+    container_name: data-hub-backend-dev
+    networks:
+      - application
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./backend:/backend
+    ports:
+      - "5000:5000"
