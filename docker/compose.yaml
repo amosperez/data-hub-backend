@@ -15,3 +15,21 @@ services:
 networks:
   application:
     driver: bridge
+
+
+# Notes:
+# - Use this file to start and manage your backend container for development.
+
+# General Commands:
+# - Start the container:
+#     docker compose -f compose.yaml up
+# - Start in detached mode:
+#     docker compose -f compose.yaml up -d
+# - Stop and remove containers:
+#     docker compose -f compose.yaml down
+
+# Your Specific Workflow:
+# - Start the backend container for development:
+#     docker compose -f ./docker/compose.yaml up -d
+# - Interact with the running container:
+#     docker exec -it data-hub-backend-dev sh
