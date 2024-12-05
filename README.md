@@ -18,3 +18,13 @@
     ```dockerfile
     docker exec -it data-hub-backend-dev sh
     ```
+
+
+## Environment Variables
+
+- **The `.env` file in the `docker` folder is used to configure Docker-specific settings that are not included in the repository.**:
+
+    Current Configuration:
+    ```dockerfile
+    COMPOSE_PROJECT_NAME=compose-stack-name # Sets the name of the Docker Compose stack.
+    ```
